@@ -1,10 +1,7 @@
 # Build directories and binary files
-bin/
-*build/
+build/
 out/
-data/
 cmake-build-*/
-conan-cache/
 
 # User spesific settings
 CMakeUserPresets.json
@@ -34,3 +31,4 @@ $RECYCLE.BIN/
 .TemporaryItems
 ehthumbs.db
 Thumbs.db
+Dockerfile
