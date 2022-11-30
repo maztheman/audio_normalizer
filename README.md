@@ -1,5 +1,6 @@
 # audio_normalizer
-drop in solution for sonarr / radarr to normalize tv and movie audio.
+drop in solution for sonarr / radarr to normalize tv and movie audio.  
+Use best audio and video codec that is compatible with chromecast ultra.
 
 # Requirements
 

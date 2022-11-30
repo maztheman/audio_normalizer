@@ -27,9 +27,20 @@ set(ENABLE_PCH_DEFAULT ON)
 # https://github.com/cpp-best-practices/project_options
 include(FetchContent)
 FetchContent_Declare(_project_options URL https://github.com/aminya/project_options/archive/refs/tags/v0.25.2.zip)
-FetchContent_MakeAvailable(_project_options)
+FetchContent_Declare(
+  EBML
+  GIT_REPOSITORY https://github.com/Matroska-Org/libebml.git
+  GIT_TAG        8330b222fec992b295c8b2149cf70f9ff648ce4a #release-1.4.4
+  FIND_PACKAGE_ARGS NAMES EBML
+)
+FetchContent_Declare(
+  matroska
+  GIT_REPOSITORY https://github.com/Matroska-Org/libmatroska.git
+  GIT_TAG        f5315fddda2d434e47035c038549a808d8b8eac7 #release-1.7.1
+  FIND_PACKAGE_ARGS NAMES matroska
+)
+FetchContent_MakeAvailable(_project_options EBML matroska)
 include(${_project_options_SOURCE_DIR}/Index.cmake)
-
 
 # uncomment to enable vcpkg:
 # # Setup vcpkg - should be called before defining project()

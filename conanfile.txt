@@ -6,6 +6,10 @@ cli11/2.2.0
 spdlog/1.11.0
 fmt/9.1.0
 drogon/1.8.0
+concurrentqueue/1.0.3
+jsoncpp/1.9.5
+ffmpeg/5.0
+sqlite3/3.40.0
 
 [generators]
 cmake_find_package_multi
