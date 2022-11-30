@@ -81,7 +81,7 @@ void process_sonarr(std::string &data)
         // Probably always use FFMpeg to downstereo it unless there is a better option (dts,hdaudio, etc) from eac3to ?
 
         // TODO: figure out how to run dynamic audio normlizer;
-
+        // https://github.com/lordmulder/DynamicAudioNormalizer/blob/master/DynamicAudioNormalizerCLI/src/Main.cpp
 
         // TODO: remux into a mp4 container using probably ffmpeg. Important to remux and not reencode at this point
         // TODO: remux 1 video 1 audio 1 subtitle, in a format that is Chromecast Ultra compatible
